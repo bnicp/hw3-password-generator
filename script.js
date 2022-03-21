@@ -1,42 +1,67 @@
 // char set - http://www.net-comber.com/charset.html
 
 
-// Assignment Code -- PROVIDED BY TA
+// Assignment Code -- first line PROVIDED BY TA
 var generateBtn = document.querySelector("#generate");
 
-// assigning variables
-var length = document.querySelector('#numCharacters');
-var lowercase = document.querySelector('#incLowercase');
-var uppercase = document.querySelector('#incUppercase');
-var numbers = document.querySelector('#incNumbers');
-var symbols = document.querySelector('#incSymbols');
-var form = document.querySelector('#passwordForm');
+// assigning global variables
+var length = document.getElementById('numCharacters');
+var lowercase = document.getElementById('incLowercase');
+var uppercase = document.getElementById('incUppercase');
+var numbers = document.getElementById('incNumbers');
+var symbols = document.getElementById('incSymbols');
+var form = document.getElementById('passwordForm');
+var passwordText = document.getElementById('password'); 
 
-//function to generate password
-function generatePassword() {
+const randomChoices = {
+  lowercase: getRandomLower,
+  uppercase: getRandomUpper,
+  numbers: getRandomNumber,
+  symbols: getRandomSymbol
+};
 
-}
+// Add event listener to generate button -- first line PROVIDED BY TA
+generateBtn.addEventListener("click", () => {
+  var numCharacters = +length.value;
+  var incUppercase = uppercase.checked;
+  var incNumbers = numbers.checked;
+  var incSymbols = symbols.checked;
 
-// Write password to the #password input -- PROVIDED BY TA
-function writePassword() {
-  var password = generatePassword();
-  var passwordText = document.querySelector("#password");
+  passwordText.innerText = generatePassword(numCharacters, incUppercase, incNumbers, incSymbols, length);
+});
 
-  passwordText.value = password;
-}
-
-//next thing that needs to be done
-
+// generate password function
+function generatePassword(length, lowercase, uppercase, numbers, symbols); {
   
+  // build password from strings
+  let generatedPassword = '';
+
+  var incParameters = lowercase + uppercase + numbers + symbols;
+  
+  //don't include unchecked parameters
+  var incArray = [{lowercase}, {uppercase}, {numbers}, {symbols}].filter (item => Object.values(item)[0];
+
+  if(incArray === 0) {
+    return '';
+  }
+
+  // loop through length and generate each accepted parameter
+  for(let i= 0; i < length; i+= incParameters) {
+    incArray.forEach(type => {
+      const keys = object.keys(type)[0];
+
+      generatedPassword += randomChoices[keys]();
+    });
+  }
+  //write to page
+  const output = generatedPassword.slice(0, length);
+	
+	return output;
+}
 
 
-// Add event listener to generate button -- PROVIDED BY TA
-generateBtn.addEventListener("click", writePassword);
 
 
-
-
-// generator functions
 function getRandomLower() {
 	return String.fromCharCode(Math.floor(Math.random() * 26) + 97);
 }
@@ -50,7 +75,6 @@ function getRandomNumber() {
 }
 
 function getRandomSymbol() {
-	return +String.fromCharCode(Math.floor(Math.random() * ) + );
+	const symbols = '!@#$%^&*(){}[]=<>/,.'
 	return symbols[Math.floor(Math.random() * symbols.length)];
 }
-
