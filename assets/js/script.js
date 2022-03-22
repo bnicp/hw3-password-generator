@@ -1,3 +1,6 @@
+// char set - http://www.net-comber.com/charset.html
+
+
 // Assignment Code -- first line PROVIDED BY TA
 var generateBtn = document.querySelector("#generate");
 
@@ -10,7 +13,8 @@ var symbols = document.getElementById('incSymbols');
 var form = document.getElementById('passwordForm');
 var passwordText = document.getElementById('password'); 
 
-// defining random choices for each character type
+console.log(uppercase);
+
 const randomChoices = {
   lowercase: getRandomLower,
   uppercase: getRandomUpper,
@@ -20,15 +24,12 @@ const randomChoices = {
 
 // Add event listener to generate button -- first line PROVIDED BY TA
 generateBtn.addEventListener("click", () => {
- 
-//whether to include character types or not
   var numCharacters = +length.value;
   var incUppercase = uppercase.checked;
   var incLowercase = lowercase.checked;
   var incNumbers = numbers.checked;
   var incSymbols = symbols.checked;
 
-// if a user enters the wrong number of characters / else run normally
 if(numCharacters <8 || numCharacters >128) {
   return alert("Please enter a number from 8-128 characters.")
 } else {
@@ -66,7 +67,7 @@ function generatePassword(length, lowercase, uppercase, numbers, symbols) {
 }
 
 
-// random characater generator functions
+// generator functions
 function getRandomLower() {
 	return String.fromCharCode(Math.floor(Math.random() * 26) + 97);
 }

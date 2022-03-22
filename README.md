@@ -1,66 +1,33 @@
 # hw3-password-generator
+
 ## Description
 
-Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
+This was my first project in JavaScript and it provided some valuable insight. The language is both easier and harder than I previously thought.
 
-- What was your motivation?
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-- What problem does it solve?
-- What did you learn?
+The importance of pseudo code became paramount throughout because it's hard to write code or even look up possible function types without knowing each little piece you're trying to solve. It taught me to look at projects in smaller chunks rather than sitting down and immediately being concerned over the totality of the end result.
 
-## Table of Contents (Optional)
-
-If your README is long, add a table of contents to make it easy for users to find what they need.
-
-- [Installation](#installation)
-- [Usage](#usage)
-- [Credits](#credits)
-- [License](#license)
-
-## Installation
-
-What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
+Through perseverance and a lot of googling, I've now built a tool I can hand off to friends or use to set my own passwords in the future. 
 
 ## Usage
 
-Provide instructions and examples for use. Include screenshots as needed.
+Screenshot of a generated password based on given parameters:
 
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
-
-    ```md
-    ![alt text](assets/images/screenshot.png)
-    ```
+[password screenshot](./assets/images/password_generated.jpg)
 
 ## Credits
 
-List your collaborators, if any, with links to their GitHub profiles.
+There are so many ways to do this project and below is a list of sites and tutorials I used to help me determine the course I would use:
 
-If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
+Character codes: https://theasciicode.com.ar/
+Web Dev Simplified: https://www.youtube.com/watch?v=iKo9pDKKHnc
+Traversy Media: https://www.youtube.com/watch?v=duNmhKgtcsI
+Omerco: https://www.youtube.com/watch?v=-Dog-Wd_RLw
+Code with Clinton: https://www.youtube.com/watch?v=jKXkueNqdkk
+Daniel Vega: https://www.youtube.com/watch?v=v2jfGo7ztm8
 
-If you followed tutorials, include links to those here as well.
 
 ## License
 
-The last section of a high-quality README file is the license. This lets other developers know what they can and cannot do with your project. If you need help choosing a license, refer to [https://choosealicense.com/](https://choosealicense.com/).
+MIT License
 
----
-
-🏆 The previous sections are the bare minimum, and your project will ultimately determine the content of this document. You might also want to consider adding the following sections.
-
-## Badges
-
-![badmath](https://img.shields.io/github/languages/top/lernantino/badmath)
-
-Badges aren't necessary, per se, but they demonstrate street cred. Badges let other developers know that you know what you're doing. Check out the badges hosted by [shields.io](https://shields.io/). You may not understand what they all represent now, but you will in time.
-
-## Features
-
-If your project has a lot of features, list them here.
-
-## How to Contribute
-
-If you created an application or package and would like other developers to contribute it, you can include guidelines for how to do so. The [Contributor Covenant](https://www.contributor-covenant.org/) is an industry standard, but you can always write your own if you'd prefer.
-
-## Tests
-
-Go the extra mile and write tests for your application. Then provide examples on how to run them here.
+Copyright (c) 2022 bnicp
