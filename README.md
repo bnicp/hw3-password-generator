@@ -8,11 +8,11 @@ The importance of pseudo code became paramount throughout because it's hard to w
 
 Through perseverance and a lot of Googling, I've now built a tool I can hand off to friends or use to set my own passwords in the future. 
 
+
 ## Usage
 
-Screenshot of a generated password based on given parameters:
+[Video of a generating a password based on given parameters](./assets/images/pwd_generator.gif)
 
-[password screenshot](./assets/images/password_generated.jpg)
 
 ## Credits
 
