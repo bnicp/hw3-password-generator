@@ -10,7 +10,7 @@ Through perseverance and a lot of Googling, I've now built a tool I can hand off
 
 ## Usage
 
-[Video of a generating a password based on given parameters](./assets/images/pwd_generator.gif)
+![Demo of the project.](./assets/images/pwd_generator.gif)
 
 ## Credits
 
